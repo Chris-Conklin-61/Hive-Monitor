@@ -41,6 +41,7 @@
 # 04/30/2019 - Conklin - Change Data gathering loop from 1 to 2 minutes
 # 05/03/2019 - Conklin - Lower shutdown voltage to 10.5 Volts
 # 05/15/2019 - Conklin - Send Hive Scale information to the IBM IoT
+# 06/13/2019 - Conklin - Remove tokens for public viewing
 #             
 # ----------------------------------------------------------------------
 
@@ -59,7 +60,7 @@ import BlynkLib
 import wiotp
 
 Hive = 'KA1'				           			# Hive Identifier
-BLYNK_AUTH = '869a1416985544b7b94b25418a01bae7' # Blynk Hive Monitor Project Authority
+BLYNK_AUTH = 'ADD_YOUR PROJECT AUTHORITY'                       # Blynk Hive Monitor Project Authority
 Power_Sensor_Installed = True 					# Poll the INA219 Current Sensor
 Hive_Temperature_Sensor_Installed = True		# Poll the Hive DHT22 Sensor
 Ambient_Temperature_Sensor_Installed = True 	# Poll the Ambient DHT22 Sensor
@@ -68,10 +69,10 @@ Hive_Weight_LR_Sensor_Installed = True  		# Poll the Hive Weight Left Rear Senso
 Hive_Weight_LF_Sensor_Installed = True  		# Poll the Hive Weight Left Front Sensor
 Hive_Weight_RF_Sensor_Installed = True  		# Poll the Hive Weight Right Front Sensor 
 # ---- IBM IOT Information ---------------------------------------
-organization = "bjxf7f"
+organization = "ADD_YOUR_ORGANIZATION"
 typeId = "Hive_Scale"
 deviceId = "HiveMonitorA"
-authToken = "MyT0kenA"              
+authToken = "ADD_YOUR_TOKEN"              
 # ---- DHT22 Humidity Sensor Information ---------------------------------------
 Humidity_Sensor = Adafruit_DHT.DHT22    # specify the Humidity sensor type
 DHT22_H_pin = 6	    				    # gpio pin connected to the DHT22 Hive sensor
